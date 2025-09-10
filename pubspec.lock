@@ -86,10 +86,11 @@ packages:
   in_app_update:
     dependency: "direct main"
     description:
-      name: in_app_update
-      sha256: "1d80b558597cc7c84f4a1ec91fbc5022facd6d1d0a198fdfe1a5c444ce43859c"
-      url: "https://pub.dev"
-    source: hosted
+      path: "."
+      ref: master
+      resolved-ref: "8c3097e784dea1d0b9367a3746f06c88527cfd95"
+      url: "https://github.com/jonasbark/flutter_in_app_update"
+    source: git
     version: "4.2.4"
   material_color_utilities:
     dependency: transitive
