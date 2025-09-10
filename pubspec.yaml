@@ -1,27 +1,23 @@
 name: native_updater
 description: Flutter package for prompting users to update with a native dialog whether using the app store version or any version at the user's discretion.
+publish_to: "none"
 
 version: 0.1.2
 homepage: https://github.com/ofload/native_updater
 
 environment:
-  sdk: '>=3.4.0 <4.0.0'
+  sdk: ">=3.8.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  # package_info will help us to find current installed version of application.
-
   # url_launcher will help us to trigger app store / play store url from our app.
-  url_launcher: ^6.2.6
+  url_launcher: ^6.3.2
   # Enables In App Updates on Android using the official Android APIs.
-  in_app_update: ^4.2.2
-  dio: ^5.4.3+1
-  package_info_plus: ^8.0.0
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
+  in_app_update: ^4.2.4
+  # package_info will help us to find current installed version of application.
+  package_info_plus: ^8.3.1
+  dio: ^5.9.0
 
 flutter:
   assets:

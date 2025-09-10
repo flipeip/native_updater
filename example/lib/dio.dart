@@ -1,18 +1,15 @@
 import 'dart:io';
 
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:native_updater/native_updater.dart';
-import 'package:dio/dio.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'native_updater DIO example',
-      home: Home(),
-    );
+    return MaterialApp(title: 'native_updater DIO example', home: Home());
   }
 }
 
@@ -43,25 +40,18 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Your App'),
-      ),
+      appBar: AppBar(title: Text('Your App')),
       body: Center(
-        child: TextButton(
-            onPressed: requestAPI,
-            child: Text('Request API')
-        ),
+        child: TextButton(onPressed: requestAPI, child: Text('Request API')),
       ),
     );
   }
 
   requestAPI() async {
-    var dio = Dio(BaseOptions(
-      baseUrl: 'http://httpbin.org/',
-    ));
+    var dio = Dio(BaseOptions(baseUrl: 'http://httpbin.org/'));
 
     try {
-      Response response = await dio.get('/get');
+      await dio.get('/get');
     } on DioException catch (e) {
       checkVersion(e.response!.statusCode!);
     }
