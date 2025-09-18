@@ -19,7 +19,7 @@ dependencies:
       url: https://github.com/jonasbark/flutter_in_app_update
       ref: master
   # package_info will help us to find current installed version of application.
-  package_info_plus: ^8.3.1
+  package_info_plus: ^9.0.0
   dio: ^5.9.0
 
 flutter:

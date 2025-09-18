@@ -88,10 +88,10 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: "8c3097e784dea1d0b9367a3746f06c88527cfd95"
+      resolved-ref: "1a513f9370367f165ea71051384eb7f7c8904a88"
       url: "https://github.com/jonasbark/flutter_in_app_update"
     source: git
-    version: "4.2.4"
+    version: "4.2.5"
   material_color_utilities:
     dependency: transitive
     description:
@@ -120,10 +120,10 @@ packages:
     dependency: "direct main"
     description:
       name: package_info_plus
-      sha256: "16eee997588c60225bda0488b6dcfac69280a6b7a3cf02c741895dd370a02968"
+      sha256: f69da0d3189a4b4ceaeb1a3defb0f329b3b352517f52bed4290f83d4f06bc08d
       url: "https://pub.dev"
     source: hosted
-    version: "8.3.1"
+    version: "9.0.0"
   package_info_plus_platform_interface:
     dependency: transitive
     description:
@@ -197,10 +197,10 @@ packages:
     dependency: transitive
     description:
       name: url_launcher_android
-      sha256: "69ee86740f2847b9a4ba6cffa74ed12ce500bbe2b07f3dc1e643439da60637b7"
+      sha256: "199bc33e746088546a39cc5f36bac5a278c5e53b40cb3196f99e7345fdcfae6b"
       url: "https://pub.dev"
     source: hosted
-    version: "6.3.18"
+    version: "6.3.22"
   url_launcher_ios:
     dependency: transitive
     description:
@@ -274,5 +274,5 @@ packages:
     source: hosted
     version: "5.14.0"
 sdks:
-  dart: ">=3.8.0 <4.0.0"
-  flutter: ">=3.29.0"
+  dart: ">=3.9.0 <4.0.0"
+  flutter: ">=3.35.0"
